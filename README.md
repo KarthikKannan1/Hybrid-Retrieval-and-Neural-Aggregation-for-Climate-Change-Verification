@@ -2,7 +2,7 @@
 
 An automated fact-checking system for climate-related claims, built on the CLIMATE-FEVER task. Given a claim, the system retrieves the most relevant evidence passages from a large corpus and classifies the claim as **SUPPORTS**, **REFUTES**, **NOT_ENOUGH_INFO**, or **DISPUTED**.
 
-The pipeline combines classical lexical retrieval (BM25) with transformer-based semantic re-ranking, then aggregates the top evidence into a claim-level verdict using a BiLSTM over frozen encoder embeddings. The best configuration reaches **53.90% dev accuracy** —` an **18.84-point absolute improvement** over the task baseline of 35.06%.
+The pipeline combines classical lexical retrieval (BM25) with transformer-based semantic re-ranking, then aggregates the top evidence into a claim-level verdict using a BiLSTM over frozen encoder embeddings. The best configuration reaches **53.90% dev accuracy** - an **18.84-point absolute improvement** over the task baseline of 35.06%.
 
 Developed as a team research project for [COMP90042 (Natural Language Processing)](https://github.com/drcarenhan/COMP90042_2026), Master of Computer Science, University of Melbourne.
 

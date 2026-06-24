@@ -8,7 +8,7 @@ Developed as a team research project for COMP90042 (Natural Language Processing)
 
 ## System Architecture
 
-![System architecture](docs/system-architecture.png)
+<img width="560" height="731" alt="image" src="https://github.com/user-attachments/assets/f205b5f7-9bcb-47b5-87af-250ed4e49752" />
 
 The pipeline runs in two main stages:
 

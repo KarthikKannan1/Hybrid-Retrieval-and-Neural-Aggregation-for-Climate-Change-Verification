@@ -53,7 +53,7 @@ The notebook is kept intact as a single document so that the full research narra
 
 ## Report
 
-The full research report (ACL format), including literature review, methodology, experiments, and analysis, is included: see [Project Report](report.pdf).
+The full research report (ACL format), including literature review, methodology, experiments, and analysis, is included: [Project Report](https://github.com/KarthikKannan1/Hybrid-Retrieval-and-Neural-Aggregation-for-Climate-Change-Verification/blob/main/Project%20Report.pdf)
 
 ## Team & Contributions
 

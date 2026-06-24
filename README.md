@@ -40,20 +40,30 @@ Findings in brief: the BiLSTM aggregator consistently beat a unidirectional LSTM
 - **Frozen encoders** — embeddings are pre-computed once and cached, which removes the encoder from the training loop and prevents a large model from overfitting a small (~1.2k claim) training set.
 - **Sentence-level NLI reasoning** — an explicit per-sentence verdict stage aimed at the conflicting-evidence (DISPUTED) case that prior pipelines couldn't handle.
 
+## Repository Structure
+
+```
+Climate_Fact_Checking.ipynb   ← the full pipeline (retrieval, aggregation, training, evaluation)
+Project Report.pdf            ← research report (ACL format)
+Literature Review/            ← papers reviewed for the project
+docs/                         ← figures used in this README
+README.md
+```
+
 ## Running the Code
 
-The system is implemented as a single Jupyter notebook (`FinalNotebook.ipynb`), designed to run on Google Colab.
+The system is implemented as a single Jupyter notebook, [`Climate_Fact_Checking.ipynb`](Climate_Fact_Checking.ipynb), designed to run on Google Colab.
 
 1. Open the notebook in Google Colab.
 2. Set the runtime to **GPU** (Runtime → Change runtime type → GPU). This matters a lot: the transformer encoding steps run in roughly half an hour on a GPU but many hours on CPU.
-3. Provide the CLIMATE-FEVER data files (`train-claims.json`, `dev-claims.json`, `test-claims-unlabelled.json`, `evidence.json`) — these are not included in the repo.
+3. Provide the CLIMATE-FEVER data files (`train-claims.json`, `dev-claims.json`, `test-claims-unlabelled.json`, `evidence.json`) in the expected data directory — these are not included in the repo.
 4. Run all cells top to bottom.
 
 The notebook is kept intact as a single document so that the full research narrative — code, training logs, plots, and analysis — is visible inline without re-running.
 
 ## Report
 
-The full research report (ACL format), including literature review, methodology, experiments, and analysis, is included: [Project Report](https://github.com/KarthikKannan1/Hybrid-Retrieval-and-Neural-Aggregation-for-Climate-Change-Verification/blob/main/Project%20Report.pdf)
+The full research report (ACL format), including literature review, methodology, experiments, and analysis, is included: see [Project Report](Project%20Report.pdf).
 
 ## Team & Contributions
 
